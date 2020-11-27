@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 6,
-        "description": "Allows transport to other realms"
+        "description": "Custom portals between Filip's server and Eric's realm"
     }
 }
