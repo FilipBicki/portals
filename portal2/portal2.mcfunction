@@ -15,9 +15,9 @@ execute as @s[tag=!dead] if entity @e[tag=!p1_extra,tag=!portal2,type=#tf_portal
 
 #### Teleport ####
 # Custom to CustomNether
-execute as @e[type=#tf_portals:p1_can_tp,tag=!p1_teleported] at @s if predicate tf_portals:in_fran1 if entity @e[tag=p1_extra,distance=..0.8] at @e[tag=portal2,distance=0..2] rotated as @e[tag=portal2,distance=0..2] in fran:fran1nether run function tf_portals:portal2/teleport
+execute as @e[type=#tf_portals:p1_can_tp,tag=!p1_teleported] at @s if predicate tf_portals:in_hartford if entity @e[tag=p1_extra,distance=..0.8] at @e[tag=portal2,distance=0..2] rotated as @e[tag=portal2,distance=0..2] in connecticut:bridgeport run function tf_portals:portal2/teleport
 # CustomNether to Custom
-execute as @e[type=#tf_portals:p1_can_tp,tag=!p1_teleported] at @s if predicate tf_portals:in_fran1nether if entity @e[tag=p1_extra,distance=..0.8] at @e[tag=portal2,distance=0..2] rotated as @e[tag=portal2,distance=0..2] in fran:fran1 run function tf_portals:portal2/teleport
+execute as @e[type=#tf_portals:p1_can_tp,tag=!p1_teleported] at @s if predicate tf_portals:in_bridgeport if entity @e[tag=p1_extra,distance=..0.8] at @e[tag=portal2,distance=0..2] rotated as @e[tag=portal2,distance=0..2] in connecticut:hartford run function tf_portals:portal2/teleport
 
 # Kill extras if nothing nearby
 execute unless entity @e[tag=!p1_extra,tag=!portal2,type=#tf_portals:p1_can_tp,distance=0..3] if entity @e[tag=p1_extra,distance=0..2] run kill @e[tag=p1_extra,distance=0..2]
